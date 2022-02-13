@@ -2,7 +2,7 @@
 
 ## Inspiration
 
-[![Project Video Demonstration]("./imgs/cover-page.jpg")](https://www.youtube.com/watch?v=tL-fd5SKzwE)
+[![Project Video Demonstration](cover-page.jpg)](https://www.youtube.com/watch?v=tL-fd5SKzwE)
 
 World hunger is on the rise, affecting 9.9 percent of people globally. In fact, from 2020 to 2021, the number of people who did not have access to food grew by as many as 161 million.
 
