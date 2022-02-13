@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="dashboard.css" />
+    <link rel="stylesheet" href="style.css" />
+
+		<script defer src="receive.js"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lato:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="./school.svg" type="image/x-icon" />
+	</head>
+	<body class="preload">
+     <!--Navbar HTML Begins-->    
+    <nav class="navbar">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Donation</a></li>
+          <li><a>Spotlight</a></li>
+      </ul>
+    </nav>
+    <!--Navbar HTML Ends-->
+
+		<main class="dictionary-main">
+     
+			<h2 class="dictionary-title">Restaurants</h2>
+			<button class="add-word">+</button>
+			<ul class="dictionary">
+
+          
+					<button class="word-button excuse-me" data-word="excuse me">
+             <img src="imgs/Sushi.png"/>
+            Sushi by M
+					</button>
+				</li>
+				<li class="word">
+					<button class="word-button motivated" data-word="motivated">
+             <img src="imgs/pizza.png"/>
+            Joe's Pizza
+					</button>
+				</li>
+				
+				<li class="word">
+         
+					<button class="word-button ring" data-word="ring">
+              <img src="imgs/uluh.png"/>
+            Uluh
+            </button>
+            <!-- <img src="imgs/uluh+logo+website.png" alt="uluh_logo"> -->
+				</li>
+			
+			</ul>
+			<div class="add-form-wrapper">
+				<div class="form-bg"></div>
+				<h3>Describe the restaurant you would like to add!</h3>
+				<button type="button" class="exit-add">X</button>
+				<form class="add-form">
+					<div class="form-pair">
+						<label for="word" class="add-label"> Name: </label
+						><input required type="text" id="word" class="add-text-field" />
+					</div>
+					<div class="form-pair">
+						<label for="context" class="add-label">Item Name: </label
+						><textarea
+							required
+							id="context"
+							class="add-text-field"
+							cols="30"
+							rows="5"
+						></textarea>
+					</div>
+					<div class="form-pair">
+						<label for="language" class="add-label">Quantity: </label
+						>
+            <input required type="text" id="language" class="add-text-field" />
+					</div>
+					<button class="submit-add" type="submit">Submit</button>
+				</form>
+			</div>
+			<article class="word-info shadow">
+				<div class="word-info-bg"></div>
+				<div class="word-info-content">
+					<h3>Joe's Pizza</h3>
+					<p class="context">
+						<span class="info-title">Item Name:  </span>
+						<span class="context-content"
+							>Pizza</span
+						>
+					</p>
+					<p class="c-language">
+						<span class="info-title">Info regarding Joe's Pizza
+					</p>
+					<p class="p-language">
+						<span class="info-title">Quantity: </span>
+						<span class="language-content">1</span>
+					</p>
+					<section class="definitions">
+						<p class="info-title info-title-hidden">Definition:</p>
+					</section>
+					<form class="add-definition">
+						<label for="definition"
+							><span class="info-title">Questions for the donator:</span></label>
+						<textarea
+							name="definition"
+							id="definition"
+							cols="30"
+							rows="3"
+						></textarea>
+						<button class="submit-definition" type="submit">Submit</button>
+					</form>
+				
+				</div>
+				<button type="button" class="exit-definition">X</button>
+			</article>
+			<article class="word-info excuse-me">
+				<div class="word-info-bg"></div>
+				<div class="word-info-content">
+					<h3>Sushi Rolls</h3>
+					<p class="context">
+						<span class="info-title">Item Name: </span>
+						<span class="context-content"
+							>Sushi Rolls</span
+						>
+					</p>
+					<p class="c-language">
+						<span class="info-title">Item is sushi. Location: Milmont Dr & Jurgens Dr, 1313 N Milpitas Blvd #159, Milpitas, CA 95035
+					</p>
+					<p class="p-language">
+						<span class="info-title">Quantity: </span>
+						<span class="language-content">10</span>
+					</p>
+					<section class="definitions">
+						<p class="info-title info-title-hidden">Definition:</p>
+					</section>
+					<form class="add-definition">
+						<label for="definition"
+							><span class="info-title">Questions for the donator:</span></label
+						>
+						<textarea
+							name="definition"
+							id="definition"
+							cols="30"
+							rows="3"
+						></textarea>
+						<button class="submit-definition" type="submit">Submit</button>
+					</form>
+				
+				</div>
+				<button type="button" class="exit-definition">X</button>
+			</article>
+			<article class="word-info motivated">
+				<div class="word-info-bg"></div>
+				<div class="word-info-content">
+					<h3>Joe's Pizza Shop </h3>
+					<p class="context">
+						<span class="info-title">Item Name: </span>Pizzas
+						<span class="context-content"
+							></span
+						>
+					</p>
+					<p class="c-language">
+						<span class="info-title">Location: Milmont Dr & Jurgens Dr, 1313 N Milpitas Blvd #159, Milpitas, CA 95035
+					</p>
+					<p class="p-language">
+						<span class="info-title">Quantity: </span>
+						<span class="language-content">15</span>
+					</p>
+					<section class="definitions">
+						<p class="info-title info-title-hidden">Definition:</p>
+					</section>
+					<form class="add-definition">
+						<label for="definition"
+							><span class="info-title"> Questions for the donator: </span></label
+						>
+						<textarea
+							name="definition"
+							id="definition"
+							cols="30"
+							rows="3"
+						></textarea>
+						<button class="submit-definition" type="submit">Submit</button>
+					</form>
+			
+				</div>
+				<button type="button" class="exit-definition">X</button>
+			</article>
+			
+			<article class="word-info ring">
+				<div class="word-info-bg"></div>
+				<div class="word-info-content">
+					<h3>Uluh Chinese Restaurant</h3>
+					<p class="context">
+						<span class="info-title">Item Name: Braised Beef</span>
+						<span class="context-content"
+							>Braised Beef</span
+						>
+					</p>
+					<p class="c-language">
+						<span class="info-title">Location: 151 Parsonage Rd, Edison, NJ 08837
+					</p>
+					<p class="p-language">
+						<span class="info-title">Quantity: 12</span>
+						<span class="language-content">English</span>
+					</p>
+					<section class="definitions">
+						<p class="info-title info-title-hidden">Definition:</p>
+					</section>
+					<form class="add-definition">
+						<label for="definition"
+							><span class="info-title">Questions for the donor: </span></label
+						>
+						<textarea
+							name="definition"
+							id="definition"
+							cols="30"
+							rows="3"
+						></textarea>
+						<button class="submit-definition" type="submit">Submit</button>
+					</form>
+				
+				</div>
+				<button type="button" class="exit-definition">X</button>
+			</article>
+			<article class="word-info shout">
+				<div class="word-info-bg"></div>
+				<div class="word-info-content">
+					<h3>Don Angie</h3>
+					<p class="context">
+						<span class="info-title">Item Name:  </span>
+						<span class="context-content"
+							>Scacciata w/ Swiss Chard & Spinach</span
+						>
+					</p>
+					<p class="c-language">
+						<span class="info-title">Location to Pick up:
+ </span>Pack of toys for children to play with Location: Palo Alto Park, San Antonio, TX 78211
+					</p>
+					<p class="p-language">
+						<span class="info-title">Quantity: </span>
+						<span class="language-content">21</span>
+					</p>
+					<section class="definitions">
+						<p class="info-title info-title-hidden">Definition:</p>
+					</section>
+					<form class="add-definition">
+						<label for="definition"
+							><span class="info-title">Questions for the donator: </span></label
+						>
+						<textarea
+							name="definition"
+							id="definition"
+							cols="30"
+							rows="3"
+						></textarea>
+						<button class="submit-definition" type="submit">Submit</button>
+					</form>
+				
+				</div>
+				<button type="button" class="exit-definition">X</button>
+			</article>
+		</main>
+
+    </br>
+    </br>
+    
+	
+	</body>
+</html>
